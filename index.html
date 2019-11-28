@@ -11,6 +11,8 @@
 			<input type="text" v-on:input="changeTitle">
 			<h1 v-once>{{ title }}</h1> <!-- We just rendered once and ignore the later changes-->
 			<p> {{ sayHello() }} - <a v-bind:href="link">Google</a></p>
+			<hr>
+			<p v-html="finishedLink"></p>
 		</div>
 		<script src="js/vue.js"></script>
 		<script src="js/main.js"></script>
