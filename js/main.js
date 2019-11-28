@@ -18,9 +18,9 @@ new Vue({
     		this.title = 'Hello!';
       		return this.title;
     	},
-    	increment: function(value) {
-    		this.counter+= value;
-    	},
+    	increment: function(value, event) {
+	    	this.counter+= value;
+	    },
 	    updateCoordinates: function(event) {
 	   		this.x = event.clientX;
 	      	this.y = event.clientY;
