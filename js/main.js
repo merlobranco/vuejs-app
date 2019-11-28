@@ -10,7 +10,7 @@ var app = new Vue({
     		this.title = event.target.value;
     	},
     	sayHello: function () {
-    		return 'Hello';
+    		return this.title;
     	}
   	}
 });
