@@ -5,7 +5,8 @@ new Vue({
   	data: {
   		title: 'Hello World!',
   		link: 'http://google.com',
-  		finishedLink: '<a href="http://google.com">Google</a>'
+  		finishedLink: '<a href="http://google.com">Google</a>',
+  		counter: 0
   	},
   	methods: {
   		changeTitle: function (event) { // Using vanilla.js (pure javascript)
@@ -14,6 +15,9 @@ new Vue({
     	sayHello: function () {
     		this.title = 'Hello!';
       		return this.title;
+    	},
+    	increment: function() {
+    		this.counter++;
     	}
   	}
 });
