@@ -15,6 +15,7 @@
 			<p v-html="finishedLink"></p>
 			<button v-on:click="increment">Click me</button>
 			<p>{{ counter }}</p>
+			<p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{ y }}</p>
 		</div>
 		<script src="js/vue.js"></script>
 		<script src="js/main.js"></script>
