@@ -8,6 +8,9 @@ var app = new Vue({
   	methods: {
   		changeTitle: function (event) { // Using vanilla.js (pure javascript)
     		this.title = event.target.value;
+    	},
+    	sayHello: function () {
+    		return 'Hello';
     	}
   	}
 });
