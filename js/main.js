@@ -28,5 +28,11 @@ new Vue({
       result: function() {
         return this.counter > 5 ? 'Greater 5' : 'Smaller 5';
       }
+    },
+    watch: {
+      counter: function(value) {
+        let vm = this;
+        setTimeout(() => { vm.counter = 0; }, 2000);
+      }
     }
 });
