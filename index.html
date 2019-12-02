@@ -10,11 +10,11 @@
 		<div id="app">
 			<input type="text" v-on:input="changeTitle">
 			<h1 v-once>{{ title }}</h1> <!-- We just rendered once and ignore the later changes-->
-			<p> {{ sayHello() }} - <a :href="link">Google</a></p>
+			<p> {{ sayHello() }} - <a v-bind:href="link">Google</a></p>
 			<hr>
 			<p v-html="finishedLink"></p>
-			<button @click="counter++">Increase</button>
-			<button @click="counter--">Decrease</button>
+			<button v-on:click="counter++">Increase</button>
+			<button v-on:click="counter--">Decrease</button>
 			<p>Counter: {{ counter }}</p>
 			<p>Result: {{ result }}</p>
 			<p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{ y }}
