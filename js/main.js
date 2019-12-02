@@ -25,7 +25,7 @@ new Vue({
 	    }
   	},
     computed: {
-      result() {
+      result: function() {
         return this.counter > 5 ? 'Greater 5' : 'Smaller 5';
       }
     }
