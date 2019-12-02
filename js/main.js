@@ -9,8 +9,7 @@ new Vue({
   		counter: 0,
   		x: 0,
     	y: 0,
-      name: 'Brais',
-      result: ''
+      name: 'Brais'
   	},
   	methods: {
   		changeTitle: function (event) { // Using vanilla.js (pure javascript)
@@ -20,17 +19,14 @@ new Vue({
     		this.title = 'Hello!';
       		return this.title;
     	},
-    	increase: function() {
-	    	this.counter++;
-        this.result = this.counter > 5 ? 'Greater 5' : 'Smaller 5';
-	    },
-      decrease: function() {
-        this.counter--;
-        this.result = this.counter > 5 ? 'Greater 5' : 'Smaller 5';
-      },
 	    updateCoordinates: function(event) {
 	   		this.x = event.clientX;
 	      this.y = event.clientY;
 	    }
-  	}
+  	},
+    computed: {
+      result() {
+        return this.counter > 5 ? 'Greater 5' : 'Smaller 5';
+      }
+    }
 });
