@@ -23,7 +23,7 @@ new Vue({
 	    },
 	    updateCoordinates: function(event) {
 	   		this.x = event.clientX;
-	      	this.y = event.clientY;
+	      this.y = event.clientY;
 	    }
   	}
 });
