@@ -19,6 +19,8 @@
 			<p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{ y }}
 				- <span v-on:mousemove.stop.prevent="">DEAD SPOT</span>
 			</p>
+			<input type="text" v-model="name">
+			<p>{{ name }}</p>
 		</div>
 		<script src="js/vue.js"></script>
 		<script src="js/main.js"></script>
