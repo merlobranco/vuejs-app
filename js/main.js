@@ -9,7 +9,8 @@ new Vue({
   		counter: 0,
   		x: 0,
     	y: 0,
-      name: 'Brais'
+      name: 'Brais',
+      result: ''
   	},
   	methods: {
   		changeTitle: function (event) { // Using vanilla.js (pure javascript)
@@ -19,9 +20,14 @@ new Vue({
     		this.title = 'Hello!';
       		return this.title;
     	},
-    	increment: function(value, event) {
-	    	this.counter+= value;
+    	increase: function() {
+	    	this.counter++;
+        this.result = this.counter > 5 ? 'Greater 5' : 'Smaller 5';
 	    },
+      decrease: function() {
+        this.counter--;
+        this.result = this.counter > 5 ? 'Greater 5' : 'Smaller 5';
+      },
 	    updateCoordinates: function(event) {
 	   		this.x = event.clientX;
 	      this.y = event.clientY;
