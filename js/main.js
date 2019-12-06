@@ -9,7 +9,10 @@ new Vue({
   		counter: 0,
   		x: 0,
     	y: 0,
-      name: 'Brais'
+      name: 'Brais',
+      attachRed: false,
+      attachGreen: false,
+      attachBlue: false
   	},
   	methods: {
   		changeTitle: function (event) { // Using vanilla.js (pure javascript)
