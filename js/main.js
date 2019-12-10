@@ -13,7 +13,8 @@ new Vue({
       attachRed: false,
       attachGreen: false,
       attachBlue: false,
-      color: 'gray'
+      color: 'gray',
+      width: 100
   	},
   	methods: {
   		changeTitle: function (event) { // Using vanilla.js (pure javascript)
@@ -36,6 +37,12 @@ new Vue({
         return {
           red: this.attachRed,
           blue: !this.attachRed
+        }
+      },
+      myStyle: function() {
+        return {
+          backgroundColor: this.color,
+          width: this.width + 'px'
         }
       }
     },
