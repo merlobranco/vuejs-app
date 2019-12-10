@@ -22,7 +22,7 @@
 			</p>
 			<input type="text" v-model="name">
 			<p>{{ name }}</p>
-			<div class="demo" :class="{red: attachRed}" @click="attachRed = !attachRed"></div>
+			<div class="demo" :class="{red: attachRed, blue: !attachRed}" @click="attachRed = !attachRed"></div>
 			<div class="demo" :class="{green: attachGreen}" @click="attachGreen = !attachGreen"></div>
 			<div class="demo" :class="{blue: attachBlue}" @click="attachBlue = !attachBlue"></div>
 		</div>
