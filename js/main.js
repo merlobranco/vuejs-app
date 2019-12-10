@@ -30,6 +30,12 @@ new Vue({
     computed: {
       result: function() {
         return this.counter > 5 ? 'Greater 5' : 'Smaller 5';
+      },
+      divClasses: function() {
+        return {
+          red: this.attachRed,
+          blue: !this.attachRed
+        }
       }
     },
     watch: {
