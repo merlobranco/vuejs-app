@@ -13,7 +13,7 @@ new Vue({
       attachRed: false,
       attachGreen: false,
       attachBlue: false,
-      color: 'green'
+      color: 'gray'
   	},
   	methods: {
   		changeTitle: function (event) { // Using vanilla.js (pure javascript)
