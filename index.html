@@ -12,6 +12,7 @@
 			<p v-if="show === 0">You can see me! <span>Hello!</span></p>
 			<p v-else-if="show === 1">Now you see me!</p>
 			<p v-else>Do you also see me?</p>
+			<p v-show="show">Here I am!</p>
 			<template v-if="show">
 				<h1>Heading</h1>
 				<p>Inside a template</p>
