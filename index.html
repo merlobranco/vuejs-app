@@ -10,7 +10,7 @@
 		<div id="app">
 			<!-- Section 02. Using Conditionals and RenderingLists -->
 			<ul>
-				<li v-for="(ingredient, index) in ingredients" :key="ingredient">{{ index }} - {{ ingredient }}</li>
+				<li v-for="(ingredient, index) in ingredients" :key="index">{{ index }} - {{ ingredient }}</li>
 			</ul>
 			<button @click="ingredients.push('spices')">Add new</button>
 			<hr>
