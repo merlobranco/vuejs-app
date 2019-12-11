@@ -8,6 +8,13 @@
 	</head>
 	<body>
 		<div id="app">
+			<!-- Section 02. Using Conditionals and RenderingLists -->
+			<p v-if="show">You can see me! <span>Hello!</span></p>
+			<p v-else="show">Now you see me!</p>
+			<p>Do you also see me?</p>
+			<button @click="show = !show">Swicth</button>
+			<hr>
+			<!-- Section 02. Using Vuejs to Interact with the DOM -->
 			<input type="text" @input="changeTitle">
 			<h1 v-once>{{ title }}</h1> <!-- We just rendered once and ignore the later changes-->
 			<p> {{ sayHello() }} - <a :href="link">Google</a></p>
@@ -32,7 +39,7 @@
 			<hr>
 			<div class="demo" :style="{backgroundColor: color}"></div>
 			<div class="demo" :style="myStyle"></div>
-			<div class="demo"></div>
+			<div class="demo" :style="[myStyle, {height: width + 'px'}]"></div>
 		</div>
 		<script src="js/vue.js"></script>
 		<script src="js/main.js"></script>

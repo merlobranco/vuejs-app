@@ -14,7 +14,8 @@ new Vue({
       attachGreen: false,
       attachBlue: false,
       color: 'gray',
-      width: 100
+      width: 100,
+      show: true
   	},
   	methods: {
   		changeTitle: function (event) { // Using vanilla.js (pure javascript)
