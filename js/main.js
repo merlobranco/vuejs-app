@@ -15,7 +15,7 @@ new Vue({
       attachBlue: false,
       color: 'gray',
       width: 100,
-      show: true
+      show: 0,
   	},
   	methods: {
   		changeTitle: function (event) { // Using vanilla.js (pure javascript)
@@ -28,7 +28,14 @@ new Vue({
 	    updateCoordinates: function(event) {
 	   		this.x = event.clientX;
 	      this.y = event.clientY;
-	    }
+	    },
+      updateShow: function() {
+        if (this.show === 2) {
+          this.show = 0;
+          return;
+        }
+        this.show++;
+      }
   	},
     computed: {
       result: function() {

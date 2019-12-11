@@ -9,10 +9,10 @@
 	<body>
 		<div id="app">
 			<!-- Section 02. Using Conditionals and RenderingLists -->
-			<p v-if="show">You can see me! <span>Hello!</span></p>
-			<p v-else="show">Now you see me!</p>
-			<p>Do you also see me?</p>
-			<button @click="show = !show">Swicth</button>
+			<p v-if="show === 0">You can see me! <span>Hello!</span></p>
+			<p v-else-if="show === 1">Now you see me!</p>
+			<p v-else>Do you also see me?</p>
+			<button @click="updateShow">Swicth</button>
 			<hr>
 			<!-- Section 02. Using Vuejs to Interact with the DOM -->
 			<input type="text" @input="changeTitle">
