@@ -9,6 +9,9 @@
 	<body>
 		<div id="app">
 			<!-- Section 02. Using Conditionals and RenderingLists -->
+			<ul>
+				<li v-for="ingredient in ingredients">{{ ingredient }}</li>
+			</ul>
 			<p v-if="show === 0">You can see me! <span>Hello!</span></p>
 			<p v-else-if="show === 1">Now you see me!</p>
 			<p v-else>Do you also see me?</p>

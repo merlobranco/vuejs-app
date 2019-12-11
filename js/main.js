@@ -16,6 +16,11 @@ new Vue({
       color: 'gray',
       width: 100,
       show: 0,
+      ingredients: ['meat', 'fruit', 'cookies'],
+      persons: [
+        {name: 'Max', age: 27, color: 'red'},
+        {name: 'Anna', age: 'unknown', color: 'blue'}
+      ]
   	},
   	methods: {
   		changeTitle: function (event) { // Using vanilla.js (pure javascript)
