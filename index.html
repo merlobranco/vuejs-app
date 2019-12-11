@@ -12,6 +12,10 @@
 			<ul>
 				<li v-for="(ingredient, index) in ingredients">{{ index }} - {{ ingredient }}</li>
 			</ul>
+			<template v-for="(ingredient, index) in ingredients">
+				<h1>{{ ingredient }}</h1>
+				<p>{{ index }}</p>
+			</template>
 			<p v-if="show === 0">You can see me! <span>Hello!</span></p>
 			<p v-else-if="show === 1">Now you see me!</p>
 			<p v-else>Do you also see me?</p>
